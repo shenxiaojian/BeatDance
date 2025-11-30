@@ -18,12 +18,7 @@
 
 ## ✨ Abstract
 
-Generating realistic 3D dance from music is a challenging task that requires accurate synchronization with musical rhythms while capturing the spatial complexity of human motion. To address this, we propose **BeatDance**, a novel diffusion-based framework featuring two core components:
-
-1.  **Hierarchical Decoupled Attention (HDA):** Explicitly disentangles spatial and temporal dynamics to enhance modeling of short-term beats and long-term dependencies.
-2.  **Cycle-Consistent Learning (CCL):** Utilizes an auxiliary dance-to-music module to generate a strong loss signal, effectively ensuring consistency between the generated dance and the musical rhythm.
-
-Extensive experimental results demonstrate that our approach outperforms recent competitive methods on two benchmark datasets.
+Generating realistic 3D dance from music is a challenging task that requires accurate synchronization with musical rhythms while capturing the spatial complexity of human motion. Although existing methods can generate physically plausible dance motions, they often struggle to achieve precise alignment with music, such as the beat. To address this limitation, we propose a novel diffusion-based framework, BeatDance, with two components: 1) We present a Hierarchical Decoupled Attention (HDA) module, which first disentangles the learning of human pose and temporal dynamics. A hierarchical structure is then employed to capture both short-term and long-term dependencies, thereby enhancing spatial-temporal modeling. 2) We adopt cycle-consistent learning by introducing an auxiliary dance-to-music module. During training, discrepancies between the reconstructed and original music induce a stronger loss signal, effectively encouraging the consistency property between the music and dance motion. Extensive experimental results demonstrate that our proposed approach outperforms recent competitive methods on two benchmark datasets.
 
 ## 👥 Authors
 
